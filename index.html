@@ -1,0 +1,1827 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <title>Mr Pança Lanches</title>
+  </head>
+
+  <body class="font-sans">
+    <!-- Header -->
+    <header
+      class="relative w-full h-[420px] bg-[url('../assets/home.jpg')] bg-cover bg-center">
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/40 to-black/15"></div>
+
+      <div
+        class="relative z-10 w-full h-full flex flex-col justify-center items-center text-center px-4">
+        <img
+          src="./assets/logo.png"
+          alt="Logo da empresa"
+          class="w-50 h-50 rounded-full shadow-lg hover:scale-110 duration-200" />
+
+        <h1 class="text-4xl mb-2 font-bold text-white">Mr Pança</h1>
+
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-4" id="date-span">
+          <span class="text-white"> Seg á Dom - 19:00 as 00:00 </span>
+        </div>
+
+        <span class="text-white text-sm md:text-base mt-6">
+          R. João Batista Fico, 210 - São Judas, Bagé - RS, 96415-430
+        </span>
+      </div>
+    </header>
+    <!-- Fim do Header -->
+
+    <!-- Menu -->
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-5">
+      Conheça nosso cardápio
+    </h2>
+
+    <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+      <h2 class="text-3xl font-bold">Xis</h2>
+    </div>
+
+    <div id="menu">
+      <main
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-15 mx-auto max-w-7xl px-2 mb-16">
+        <!-- Xis 1 -->
+        <div class="flex gap-3">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgF8PZFMFbgP9ygAuNUlk52oSYqRgCdBTwEA&s"
+            alt="Xis alcatra"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Xis alcatra</p>
+
+            <p class="text-sm">
+              Ovo, milho, ervilha, alface, tomate, queijo, maionese, mostarda e
+              ketchup
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 32,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="xis-alcatra"
+                data-price="32.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do xis 1 -->
+
+        <!-- xis 2 -->
+        <div class="flex gap-3">
+          <img
+            src="https://bokaskachurrasco.azapi.com.br/_core/_uploads//2024/11/2322191124b5aeidbkji.jpg"
+            alt="Xis bacon"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Xis bacon</p>
+
+            <p class="text-sm">
+              Ovo, milho, ervilha, alface, tomate, queijo, maionese, mostarda e
+              ketchup
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 23,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="xis-bacon"
+                data-price="23.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do xis 2 -->
+
+        <!-- Xis 3 -->
+        <div class="flex gap-3">
+          <img
+            src="https://likemagazine.com.br/midias/2023/11/586f3b1340359e1a17f8bc34ea72841f.jpg"
+            alt="Xis big pança"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Xis big pança</p>
+
+            <p class="text-sm">
+              Ovo, milho, ervilha, alface, tomate, queijo, maionese, mostarda e
+              ketchup
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 34,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="xis-big-panca"
+                data-price="34.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do xis 3 -->
+
+        <!-- Xis 4 -->
+        <div class="flex gap-3">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp314M3jScG9fS16WgNX2fxNY_9_9wuvulow&s"
+            alt="Xis Calabresa"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Xis Calabresa</p>
+
+            <p class="text-sm">
+              Ovo, milho, ervilha, alface, tomate, queijo, maionese, mostarda e
+              ketchup
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 23,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="xis-calabresa"
+                data-price="23.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do xis 4 -->
+
+        <!-- Xis 5 -->
+        <div class="flex gap-3">
+          <img
+            src="https://storage.deliveryvip.com.br/v1H-OIH_CL4m8VwiyASK_O2ft4fWQePhjv_uqBzzyss/s:400:0/Z3M6Ly9kZWxpdmVy/eXZpcC95MXc2dmhm/Yndqdm1jaTI1N3Fl/cTlzM3MxMnpw"
+            alt="Xis Coração"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Xis Coração</p>
+
+            <p class="text-sm">
+              Ovo, milho, ervilha, alface, tomate, queijo, maionese, mostarda e
+              ketchup
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 25,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="xis-coracao"
+                data-price="25.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do xis 5 -->
+
+        <!-- Xis 6 -->
+        <div class="flex gap-3 items-stretch h-28">
+          <img
+            src="https://i.pinimg.com/474x/8a/b6/70/8ab6706df4732f308cae6bdc9049b31b.jpg"
+            alt="Xis Misto"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="flex flex-col justify-between h-full flex-1">
+            <p class="font-bold">Xis Misto</p>
+
+            <p class="text-sm">
+              Pão de xis, ovo e presunto
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 15,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="xis-misto"
+                data-price="15.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do xis 6 -->
+
+        <!-- Xis 7 -->
+        <div class="flex gap-3">
+          <img
+            src="https://storage.deliveryvip.com.br/Yj12uLgFMwxwzGwBdRzLZZ17evYldWrAAuoOT2QAaeE/s:400:0/Z3M6Ly9kZWxpdmVy/eXZpcC91YXRlODZx/ZHZqbGoyZHg4ank4/bHY4bjF1eThx"
+            alt="Xis Galinha"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Xis Galinha</p>
+
+            <p class="text-sm">
+              Ovo, milho, ervilha, alface, tomate, queijo, maionese, mostarda e
+              ketchup
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 24,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="xis-galinha"
+                data-price="24.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do xis 7 -->
+
+        <!-- Xis 8 -->
+        <div class="flex gap-3">
+          <img
+            src="https://storage.deliveryvip.com.br/EejuES5W84e9W8B4RBZ2Q1g1T2HvnEmZTl3FjX8aAXE/s:400:0/Z3M6Ly9kZWxpdmVy/eXZpcC9sM2U5bTdj/Nng4aXRiOGp2YXpi/NWgwMTZ1a3c5"
+            alt="Xis Picanha"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Xis Picanha</p>
+
+            <p class="text-sm">
+              Ovo, milho, ervilha, alface, tomate, queijo, maionese, mostarda e
+              ketchup
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 32,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="xis-picanha"
+                data-price="32.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do xis 8 -->
+      </main>
+
+      <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+        <h2 class="text-3xl font-bold">Mini Xis</h2>
+      </div>
+
+      <!-- Grid Mini Xis -->
+      <div
+        id="menu"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 md:gap-15 mx-auto max-w-7xl px-2 mb-16">
+
+        <!-- Mini xis 1-->
+        <div class="flex gap-3">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Mini xis alcatra"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Mini xis alcatra</p>
+
+            <p class="text-sm">
+              Milho, ervilha, alface, tomate, queijo, maionese, <br>
+              mostarda e ketchup 
+            </p>
+
+            <p class="text-sm">- Escolha se deseja fritas para acompanhar!</p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 18,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="mini-xis-alcatra"
+                data-price="18.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do mini xis 1 -->
+
+        <!-- Mini xis 2 -->
+        <div class="flex gap-3">
+          <img
+            src="https://www.rbsdirect.com.br/imagesrc/25682612.jpg?format=webp&w=1600&h=1600&a=c"
+            alt="Mini xis bacon"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Mini xis bacon</p>
+
+            <p class="text-sm">
+              Milho, ervilha, alface, tomate, queijo, maionese, <br>
+              mostarda e ketchup 
+            </p>
+            <p class="text-sm">- Escolha se deseja fritas para acompanhar!</p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 17,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="mini-xis-bacon"
+                data-price="17.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do mini xis 2 -->
+
+        <!-- Mini xis 3 -->
+        <div class="flex gap-3">
+          <img
+            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8HxiB59FXoAnDyZSsFPMXeOjANRnqGHjlYr6wmsL5646fvW90"
+            alt="Mini xis big pança"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Mini xis big pança</p>
+
+            <p class="text-sm">
+              Milho, ervilha, alface, tomate, queijo, maionese, <br>
+              mostarda e ketchup 
+            </p>
+            <p class="text-sm">- Escolha se deseja fritas para acompanhar!</p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 17,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="mini-xis-big-panca"
+                data-price="17.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do mini xis 3 -->
+
+        <!-- Mini xis 4 -->
+        <div class="flex gap-3">
+          <img
+            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_iw4S8OTQZ6aMhCuaz7pK9qmeBkyEmptM4eF4Qhsg00Bk9tB3"
+            alt="Mini xis calabresa"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Mini xis calabresa</p>
+
+            <p class="text-sm">
+              Milho, ervilha, alface, tomate, queijo, maionese, <br>
+              mostarda e ketchup 
+            </p>
+            <p class="text-sm">- Escolha se deseja fritas para acompanhar!</p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 18,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="mini-xis-calabresa"
+                data-price="18.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do mini xis 4 -->
+
+        <!-- Mini xis 5 -->
+        <div class="flex gap-3">
+          <img
+            src="https://suamarca.chefware.com.br/68/0/0/x-coracao-aberto-fritas.jpg"
+            alt="Mini xis coração"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Mini xis coração</p>
+
+            <p class="text-sm">
+              Milho, ervilha, alface, tomate, queijo, maionese, <br>
+              mostarda e ketchup 
+            </p>
+            <p class="text-sm">- Escolha se deseja fritas para acompanhar!</p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 19,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="mini-xis-coracao"
+                data-price="19.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do mini xis 5 -->
+
+        <!-- Mini xis 6 -->
+        <div class="flex gap-3">
+          <img
+            src="https://d1ralsognjng37.cloudfront.net/9e40298c-6fb0-42ab-8d10-3133d32276b1.jpeg"
+            alt="Mini xis galinha"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Mini xis galinha</p>
+
+            <p class="text-sm">
+              Milho, ervilha, alface, tomate, queijo, maionese, <br>
+              mostarda e ketchup 
+            </p>
+            <p class="text-sm">- Escolha se deseja fritas para acompanhar!</p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 18,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="mini-xis-galinha"
+                data-price="18.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do mini xis 6 -->
+
+        <!-- Mini xis 7 -->
+        <div class="flex gap-3">
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/99/f7/30/o-melhor-e-mais-completo.jpg?w=500&h=-1&s=1"
+            alt="Mini xis salada"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Mini xis salada</p>
+
+            <p class="text-sm">
+              Carne moída, milho, ervilha, alface, tomate, queijo, <br>
+              maionese, mostarda e ketchup
+            </p>
+            <p class="text-sm">- Escolha se deseja fritas para acompanhar!</p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 16,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="mini-xis-salada"
+                data-price="16.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do mini xis 7 -->
+
+        <!-- Mini xis 8 -->
+        <div class="flex gap-3">
+          <img
+            src="https://i.pinimg.com/1200x/01/9c/5d/019c5d3badf16eef8cf270154aaf95b5.jpg"
+            alt="Mini xis picanha"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Mini xis picanha</p>
+
+            <p class="text-sm">
+              Milho, ervilha, alface, tomate, queijo, maionese, <br>
+              mostarda e ketchup 
+            </p>
+            <p class="text-sm">- Escolha se deseja fritas para acompanhar!</p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 18,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="mini-xis-picanha"
+                data-price="18.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do mini xis 8 -->
+    
+      </div>
+      <!-- Fim do Grid Mini Xis-->
+
+
+      <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+        <h2 class="text-3xl font-bold">Pastel</h2>
+      </div>
+
+      <!-- Grid Pastel -->
+      <div
+        id="menu"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-15 mx-auto max-w-7xl px-2 mb-16">
+
+        <!-- Pastel 1 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://s3.us-west-2.amazonaws.com/whatsmenu/production/recheadaodeitu/products/2229460/recheadaodeituZoV9eLUh8mofjmawebp"
+            alt="Pastel de bacon"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Pastel de bacon</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 19,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="pastel-bacon"
+                data-price="19.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do pastel 1 -->
+
+        <!-- Pastel 2 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpdfDV9bZE-XxuiUMvd8EC52WKq4npew0Lrg&s"
+            alt="Pastel de bacon com queijo"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Pastel de bacon com queijo</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 20,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="pastel-bacon-queijo"
+                data-price="20.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do pastel 2 -->
+
+        <!-- Pastel 3 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHr5TcOyBSZ7nTgqOMkeTbdmt22vhwYD9pYg&s"
+            alt="Pastel de calabresa"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Pastel de calabresa</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 19,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="pastel-calabresa"
+                data-price="19.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do pastel 3 -->
+
+        <!-- Pastel 4 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHgumkukMAwaWLPXYV6y67XzjkjXNjVCTeCQ&s"
+            alt="Pastel de calabresa com queijo"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Pastel de calabresa com queijo</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 20,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="pastel-calabresa-queijo"
+                data-price="20.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do pastel 4 -->
+
+        <!-- Pastel 5 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR77RiwvbTaLmRY5Nga7LcS0IIcuRcVihuP4g&s"
+            alt="Pastel de carne moída"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Pastel de carne moída</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 19,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="pastel-carne-moida"
+                data-price="19.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do pastel 5 -->
+
+        <!-- Pastel 6 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK6QPzcijvgUJEYBg2bBXunHGmYOJttBrOEA&s"
+            alt="Pastel de carne moída com queijo"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Pastel de carne moída com queijo</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 20,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="pastel-carne-moida-queijo"
+                data-price="20.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do pastel 6 -->
+
+         <!-- Pastel 7 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVGHvkzvmkVsmQl36TkI6vpPhg2-hLk59SNA&s"
+            alt="Pastel de coração"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Pastel de coração</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 22,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="pastel-coracao"
+                data-price="22.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do pastel 7 -->
+
+        <!-- Pastel 8 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN715Qq_92VIyfK0vfJ51eGNIfmri7zGFRmw&s"
+            alt="Pastel de coração com queijo"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Pastel de coração com queijo</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 23,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="pastel-coracao-queijo"
+                data-price="23.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do pastel 8 -->
+
+        <!-- Pastel 9 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtTtS_uF174YaF_wtKZe6nmbbP0PvcvYK-UA&s"
+            alt="Pastel de frango"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Pastel de frango</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 19,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="pastel-frango"
+                data-price="19.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do pastel 9 -->
+
+        <!-- Pastel 10 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://i.pinimg.com/1200x/e9/8f/4a/e98f4adc760b9f7fc94f8c93c6b5d8e1.jpg"
+            alt="Pastel de frango com queijo"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Pastel de frango com queijo</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 20,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="pastel-frango-queijo"
+                data-price="20.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do pastel 10 -->
+
+        <!-- Pastel 11 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://i.pinimg.com/736x/df/03/7f/df037fdde24083b2725ad4b6abdfd705.jpg"
+            alt="Pastel de presunto e queijo"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Pastel de presunto e queijo</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 23,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="pastel-presunto-queijo"
+                data-price="23.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do pastel 11 -->
+
+        <!-- Pastel 12 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://i.pinimg.com/736x/af/81/72/af8172f1439b0eb3e011380f6a9fe2f4.jpg"
+            alt="Pastel de queijo"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Pastel de queijo</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 22,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="pastel-queijo"
+                data-price="22.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do pastel 12 -->
+
+      </div>
+      <!-- Fim do Grid Pastel-->
+
+
+      <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+        <h2 class="text-3xl font-bold">Cachorro Quente</h2>
+      </div>
+
+      <!-- Grid Cachorro quente -->
+      <div
+        id="menu"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-15 mx-auto max-w-7xl px-2 mb-16">
+
+        <!-- Cachorro quente 1 -->
+        <div class="flex gap-3">
+          <img
+            src="https://s2-g1.glbimg.com/4aVoM4CL3-nCYPDx_YybLBqZ9lY=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/d/r/y2AKpWQUWTx3XCqddYBQ/httpsportalnorte.com.brwp-adminpost.phppost-292629-action-edit-2025-05-08t140249.943.jpg"
+            alt="Cachorro completo"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Cachorro completo</p>
+
+            <p class="text-sm">
+              Salsicha, milho, ervilha, alface, tomate, maionese, mostarda e ketchup.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 19,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="cachorro-completo"
+                data-price="19.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do cachorro quente 1 -->
+
+         <!-- Cachorro quente 2 -->
+        <div class="flex gap-3">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJj0KY237s85EYnPfXvsftqhdw97Ra5f20nQ&s"
+            alt="Cachorro com bacon"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Cachorro com bacon</p>
+
+            <p class="text-sm">
+              Milho, ervilha, alface, tomate, maionese, mostarda e ketchup.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 20,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="cachorro-bacon"
+                data-price="20.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do cachorro quente 2 -->
+
+         <!-- Cachorro quente 3 -->
+        <div class="flex gap-3">
+          <img
+            src="https://instadelivery-public.nyc3.digitaloceanspaces.com/images/LJEHm0EC59miHNkPrVNoYsY6V3sDd3WHMdF1XCbi.jpg"
+            alt="Cachorro com calabresa"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Cachorro com calabresa</p>
+
+            <p class="text-sm">
+              Milho, ervilha, alface, tomate, maionese, mostarda e ketchup.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 20,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="cachorro-calabresa"
+                data-price="20.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do cachorro quente 3 -->
+
+        <!-- Cachorro quente 4 -->
+        <div class="flex gap-3">
+          <img
+            src="https://portalamazonia.com/wp-content/uploads/2021/09/cachorro-quente-par.jpg"
+            alt="Cachorro com carne moída"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Cachorro com carne moída</p>
+
+            <p class="text-sm">
+              Milho, ervilha, alface, tomate, maionese, mostarda e ketchup.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 20,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="cachorro-carne-moida"
+                data-price="20.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do cachorro quente 4 -->
+
+        <!-- Cachorro quente 5 -->
+        <div class="flex gap-3">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsd3HTjSthGHoqWwv-WIK7PTSAttHot7aatg&s"
+            alt="Cachorro com coração"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Cachorro com coração</p>
+
+            <p class="text-sm">
+              Milho, ervilha, alface, tomate, maionese, mostarda e ketchup.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 20,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="cachorro-coracao"
+                data-price="20.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do cachorro quente 5 -->
+
+        <!-- Cachorro quente 6 -->
+        <div class="flex gap-3">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs5N585-WHp0B6JUYaT3iCErSRLWP7eyKwKQ&s"
+            alt="Cachorro com galinha"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Cachorro com galinha</p>
+
+            <p class="text-sm">
+              Milho, ervilha, alface, tomate, maionese, mostarda e ketchup.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 20,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="cachorro-galinha"
+                data-price="20.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do cachorro quente 6 -->
+
+        <!-- Cachorro quente 7 -->
+        <div class="flex gap-3">
+          <img
+            src="https://s2-receitas.glbimg.com/HOAJ6dltFfx_PFz3dxLXTduapCo=/0x0:3072x2304/810x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2012/10/02/15_45_15_312_Imagem_221175004.jpg"
+            alt="Pancho"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Pancho</p>
+
+            <p class="text-sm">
+              Pão de cachorro, salsicha queijo e batata palha.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 11,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="pancho"
+                data-price="11.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do cachorro quente 7 -->
+
+        <!-- Cachorro quente 8 -->
+        <div class="flex gap-3">
+          <img
+            src="https://img.cdndsgni.com/preview/11088750.jpg"
+            alt="Torrada no pão de cachorro"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div>
+            <p class="font-bold">Torrada no pão de cachorro</p>
+
+            <p class="text-sm">
+              Pão de cachorro, queijo, presunto e maionese.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-1">
+              <p class="font-bold text-lg">R$ 13,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="torrada"
+                data-price="13.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do cachorro quente 8 -->
+
+      </div>
+      <!-- Fim do Grid cachorro quente-->
+
+      <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+        <h2 class="text-3xl font-bold">Fritas</h2>
+      </div>
+
+      <!-- Grid Fritas -->
+      <div
+        id="menu"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-15 mx-auto max-w-7xl px-2 mb-16">
+
+        <!-- Porção de fritas 1 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://i.pinimg.com/736x/60/f9/38/60f938453748e223bd8c985cea41fad0.jpg"
+            alt="Porção de fritas"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Porção de fritas</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 23,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="fritas"
+                data-price="23.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da porção de fritas 1 -->
+
+        <!-- Porção de fritas 2 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://i.pinimg.com/736x/f5/44/0b/f5440bce07038d04cbfd8817be5155b5.jpg"
+            alt="Porção de fritas com calabresa e queijo"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Porção de fritas com calabresa e queijo</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 39,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="fritas-calabresa-queijo"
+                data-price="39.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da porção de fritas 2 -->
+
+        <!-- Porção de fritas 3 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://media-cdn.tripadvisor.com/media/photo-s/09/fb/32/77/batata-aditivada-com.jpg"
+            alt="Porção de fritas com coração, calabresa, frango, bacon e queijo"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Porção de fritas com coração</p>
+
+            <p class="text-sm">
+              + calabresa <br>
+              + frango <br>
+              + bacon e queijo
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 67,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="fritas-coracao-calabresa-frango-bacon-queijo"
+                data-price="67.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da porção de fritas 3 -->
+
+        <!-- Porção de fritas 4 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-gpowAxxTJOhtvT5Rb3-hNVhzlco3h0lNvw&s"
+            alt="Porção de fritas com coração e queijo"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Porção de fritas com coração e queijo</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 50,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="fritas-coracao-queijo"
+                data-price="50.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da porção de fritas 4 -->
+
+        <!-- Porção de fritas 5 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzBLaTPxcAmstV0UACGkkJDJv_1t5CL7bsCA&s"
+            alt="Porção de fritas com alcatra e queijo"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Porção de fritas com alcatra e queijo</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 51,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="fritas-alcatra-queijo"
+                data-price="51.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da porção de fritas 5 -->
+
+        <!-- Torre de fritas 6 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://www.euamomundoanimal.com.br/uploads/mp8igf9zxl2gokfq3mwj.jpg"
+            alt="Torre de batata"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Torre de batata</p>
+
+            <p class="text-sm">
+              Coração e frango
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 90,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="torre-batata"
+                data-price="90.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da torre de fritas 6 -->
+
+        <!-- Torre de fritas 7 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXj4f27w5Ny4KdaNtR0WCplT8cG1Kv005ruA&s"
+            alt="Torre de batata da casa"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Torre de batata da casa</p>
+
+            <p class="text-sm">
+              Coração, Frango, Bacon, Calabresa, Alcatra
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 110,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="torre-batata-casa"
+                data-price="110.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da torre de fritas 7 -->
+
+        <!-- Torre de fritas 8 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAxH_DnfVHvMzofIyJRWzaUpKciZzyJvgviw&s"
+            alt="Torre de batata com alcatra"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Torre de batata com alcatra</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 120,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="torre-batata-alcatra"
+                data-price="120.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da torre de fritas 8 -->
+
+      </div>
+      <!-- Fim do Grid fritas -->
+
+      <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+        <h2 class="text-3xl font-bold">Porções</h2>
+      </div>
+
+      <!-- Grid Porções -->
+      <div
+        id="menu"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-15 mx-auto max-w-7xl px-2 mb-16">
+
+        <!-- Porção 1 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPdVuLzqg6gRuaxAWOwAI8wZOIcTlMk40QiQ&s"
+            alt="Picadinho"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Picadinho</p>
+
+            <p class="text-sm">
+              Pepino, salame, azeitona, queijo e ovo de codorna
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 45,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="picadinho"
+                data-price="45.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da porção 1 -->
+
+        <!-- Porção 2 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://i.pinimg.com/736x/86/e2/fa/86e2faa1210544a1588978dac2d6d95f.jpg"
+            alt="Porção de anéis de cebola"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Porção de Anéis de Cebola</p>
+
+            <p class="text-sm">
+              16 unidades
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 25,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="porcao-anel-cebola"
+                data-price="25.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da porção 2 -->
+
+        <!-- Porção 3 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://i.pinimg.com/1200x/df/f5/f4/dff5f407dcd1235dcfaf5fc473b15e47.jpg"
+            alt="Porção de calabresa"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Porção de calabresa</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 40,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="porcao-calabresa"
+                data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da porção 3 -->
+
+        <!-- Porção 4 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://soupetropolis.com/wp-content/uploads/2020/10/726da0c9-a415-4273-b32c-3f5b309441e6.jpg"
+            alt="Porção de coração e queijo"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Porção de coração e queijo</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 45,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="porcao-coracao-queijo"
+                data-price="45.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da porção 4 -->
+
+        <!-- Porção 5 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://i.pinimg.com/736x/e9/a6/76/e9a676f4c41ef917cd25d7d6e2ee1758.jpg"
+            alt="Porção de frango empanado"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Porção de frango empanado</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 30,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="porcao-farngo-empanado"
+                data-price="30.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da porção 5 -->
+
+        <!-- Porção 6 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://www.receitasnestle.com.br/sites/default/files/srh_recipes/524ef64f6115e20d61f0f158e22e07bd.jpg"
+            alt="Porção de polenta pálito"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Porção de polenta pálito</p>
+
+            <p class="text-sm">
+              16 unidades
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 25,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="porcao-polenta-palito"
+                data-price="25.90">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da porção 6 -->
+
+        <!-- Porção 7 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/a0/13/89/chapa-mista-cubos-de.jpg"
+            alt="Porção do pança"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Porção do pança</p>
+
+            <p class="text-sm">
+              Coração, frango, bacon, calabresa e alcatra. <br>
+              Obs: Todas as carnes com queijo.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 70,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="porcao-panca"
+                data-price="70.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da porção 7 -->
+
+        <!-- Porção 8 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://i.pinimg.com/736x/ba/79/35/ba79354c0bf6d1e3f069528b5115ab5f.jpg"
+            alt="Tábua de carnes"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Tábua de carnes</p>
+
+            <p class="text-sm">
+              Alcatra, coração, frango empanado, calabresa, batata frita, anéis de cebola (10 unid.) 
+              <br> Obs: Todas as carnes com queijo.
+
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 130,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="tabua-carnes"
+                data-price="130.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da porção 8 -->
+
+      </div>
+      <!-- Fim do Grid porções -->
+
+      <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+        <h2 class="text-3xl font-bold">Bebidas</h2>
+      </div>
+
+      <!-- Grid Bebidas-->
+      <div
+        id="menu"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-15 mx-auto max-w-7xl px-2 mb-16">
+        <!-- Bebida 1 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://coopsp.vtexassets.com/arquivos/ids/249028-800-auto?v=638937339758800000&width=800&height=auto&aspect=true"
+            alt="Coca Cola 2L"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Coca-Cola 2L</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 15,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="coca-2l"
+                data-price="15.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da bebida 1 -->
+
+        <!-- Bebida 2 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="./assets/teem-2l.png"
+            alt="Teem 2 Litros"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Teem 2 Litros</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 15,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="teem-2l"
+                data-price="15.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da bebida 2 -->
+
+        <!-- Bebida 3 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://choppbrahmaexpress.vtexassets.com/arquivos/ids/158513-800-auto?v=638872339933430000&width=800&height=auto&aspect=true"
+            alt="Guaraná Antarctica 2L"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Guaraná Antarctica 2L</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 15,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="guarana-2l"
+                data-price="15.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da bebida 3 -->
+
+        <!-- Bebida 4 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://images.tcdn.com.br/img/img_prod/1082210/cerveja_antarctica_600_ml_cx_24_243_1_d8ef76dea3658fed8bd869e477585261.png"
+            alt="Cerveja Antarctica Original 600ml"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Cerveja Antarctica Original 600ml</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 16,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="cerveja-antarctica-600ml"
+                data-price="16.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da bebida 4 -->
+
+        <!-- Bebida 5 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="./assets/cerveja-budweiser-litrao.png"
+            alt="Cerveja Budweiser Litrão"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Cerveja Budweiser Litrão</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 18,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="cerveja-budweiser-litrao"
+                data-price="18.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da bebida 5 -->
+
+        <!-- Bebida 6 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://superrissul.vtexassets.com/arquivos/ids/996754-800-auto?v=639033166886570000&width=800&height=auto&aspect=true"
+            alt="Cerveja Budweiser Latão"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Cerveja Budweiser Latão</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 10,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="cerveja-budweiser-lata"
+                data-price="10.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da bebida 6 -->
+
+        <!-- Bebida 7 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://www.thebakers.com.br/wp-content/uploads/2019/05/coca-600x540-600x540.png"
+            alt="Coca Cola Lata"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Coca Cola Lata</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="coca-cola-lata"
+                data-price="6.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da bebida 7 -->
+
+        <!-- Bebida 8 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://coopsp.vtexassets.com/arquivos/ids/249047/55573.png?v=638937351715370000"
+            alt="Coca Cola Zero Lata"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Coca Cola Zero Lata</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="coca-cola-zero-lata"
+                data-price="6.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da bebida 8 -->
+
+        <!-- Bebida 9 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://images.tcdn.com.br/img/img_prod/1082210/refrigerante_guarana_antarctica_lt_350_ml_cx_285_1_5c54f71990242ea1d595d3671fb55d58.png"
+            alt="Guaraná Antarctica Lata"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Guaraná Antarctica Lata</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="guarana-lata"
+                data-price="6.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da bebida 9 -->
+
+        <!-- Bebida 10 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://acdn-us.mitiendanube.com/stores/001/165/503/products/guarana-zero1-c3a6ab3aba47aa685916192134653022-1024-1024.webp"
+            alt="Guaraná Antarctica Zero Lata"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Guaraná Antarctica Zero Lata</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="guarana-zero-lata"
+                data-price="6.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da bebida 10 -->
+
+        <!-- Bebida 11 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://s3-sa-east-1.amazonaws.com/superimg/img.produtos/7891149440801/img_500_1.png"
+            alt="Sukita 2L"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Sukita 2L</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 15,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="sukita-2l"
+                data-price="15.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da bebida 11 -->
+
+        <!-- Bebida 12 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://www.hotdogdomarcio.com.br/wp-content/uploads/2020/08/1529599829_57907b99d9.png"
+            alt="Fanta Lata"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Fanta Lata</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="fanta-lata"
+                data-price="6.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da bebida 12 -->
+
+        <!-- Bebida 12 -->
+        <div class="flex gap-3 w-full">
+          <img
+            src="https://anossadrogaria.vtexassets.com/arquivos/ids/3996965-150-150?v=638890672331400000&width=150&height=150&aspect=true"
+            alt="Sprite Lata"
+            class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+          <div class="w-full">
+            <p class="font-bold">Sprite Lata</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="sprite-lata"
+                data-price="6.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim da bebida 12 -->
+      </div>
+
+      <!-- Fim do Grid Bebidas-->
+    </div>
+    <!-- Fim do Menu -->
+
+    <!-- Modal cart -->
+    <div
+      class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+        <div id="cart-items" class="flex justify-between mb-2 flex-col">
+          <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+          <p class="font-bold mt-4">Endereço de entrega:</p>
+          <input
+            type="text"
+            placeholder="Digite seu endereço completo..."
+            id="adrress"
+            class="w-full border-2 p-1 rounded my-1" />
+            <p class="text-red-500 hidden" id="adrress-warn"">
+              Digite seu endereço completo
+            </p>
+            <div class="flex items-center justify-between mt-5 w-full">
+              <button id="close-modal-bnt">Fechar</button>
+              <button id="checkout-bnt" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim do modal cart -->
+
+    <!-- Button cart footer -->
+    <footer
+      class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+      <button
+        class="flex items-center gap-2 text-white font-bold"
+        id="cart-bnt">
+        (<span id="cart-count">0</span>) Veja meu carrinho
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+      </button>
+    </footer>
+    <!-- Fim do button cart footer -->
+  </body>
+</html>
