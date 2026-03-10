@@ -57,7 +57,36 @@
       Conheça nosso cardápio
     </h2>
 
-    <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+    <!-- Filtros de categorias -->
+    <div class="sticky top-0 z-50 bg-[#f6f7f8] py-3 shadow-sm">
+      <div class="mx-auto max-w-7xl px-2">
+        <div class="flex gap-2 overflow-x-auto pb-1 scrollbar-hide justify-center" id="category-filters">
+        <button data-category="xis" class="category-btn active flex items-center gap-2 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200">
+          <span>🍔</span> Xis
+        </button>
+        <button data-category="mini-xis" class="category-btn flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap hover:bg-red-500 hover:text-white transition-all duration-200">
+          <span>🍔</span> Mini Xis
+        </button>
+        <button data-category="pastel" class="category-btn flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap hover:bg-red-500 hover:text-white transition-all duration-200">
+          <span>🥟</span> Pastel
+        </button>
+        <button data-category="cachorro-quente" class="category-btn flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap hover:bg-red-500 hover:text-white transition-all duration-200">
+          <span>🌭</span> Cachorro Quente
+        </button>
+        <button data-category="fritas" class="category-btn flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap hover:bg-red-500 hover:text-white transition-all duration-200">
+          <span>🍟</span> Fritas
+        </button>
+        <button data-category="porcoes" class="category-btn flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap hover:bg-red-500 hover:text-white transition-all duration-200">
+          <span>🍗</span> Porções
+        </button>
+        <button data-category="bebidas" class="category-btn flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap hover:bg-red-500 hover:text-white transition-all duration-200">
+          <span>🥤</span> Bebidas
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-2 my-2 mb-6 mt-4" id="xis">
       <h2 class="text-3xl font-bold">Xis</h2>
     </div>
 
@@ -287,7 +316,7 @@
         <!-- Fim do xis 8 -->
       </main>
 
-      <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+      <div class="mx-auto max-w-7xl px-2 my-2 mb-6" id="mini-xis">
         <h2 class="text-3xl font-bold">Mini Xis</h2>
       </div>
 
@@ -530,7 +559,7 @@
       </div>
       <!-- Fim do Grid Mini Xis-->
 
-      <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+      <div class="mx-auto max-w-7xl px-2 my-2 mb-6" id="pastel">
         <h2 class="text-3xl font-bold">Pastel</h2>
       </div>
 
@@ -816,7 +845,7 @@
       </div>
       <!-- Fim do Grid Pastel-->
 
-      <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+      <div class="mx-auto max-w-7xl px-2 my-2 mb-6" id="cachorro-quente">
         <h2 class="text-3xl font-bold">Cachorro Quente</h2>
       </div>
 
@@ -1041,7 +1070,7 @@
       </div>
       <!-- Fim do Grid cachorro quente-->
 
-      <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+      <div class="mx-auto max-w-7xl px-2 my-2 mb-6" id="fritas">
         <h2 class="text-3xl font-bold">Fritas</h2>
       </div>
 
@@ -1245,7 +1274,7 @@
       </div>
       <!-- Fim do Grid fritas -->
 
-      <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+      <div class="mx-auto max-w-7xl px-2 my-2 mb-6" id="porcoes">
         <h2 class="text-3xl font-bold">Porções</h2>
       </div>
 
@@ -1459,7 +1488,7 @@
       </div>
       <!-- Fim do Grid porções -->
 
-      <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+      <div class="mx-auto max-w-7xl px-2 my-2 mb-6" id="bebidas">
         <h2 class="text-3xl font-bold">Bebidas</h2>
       </div>
 
@@ -1723,7 +1752,7 @@
         <!-- Bebida 12 -->
         <div class="flex gap-3 w-full">
           <img
-            src="https://www.hotdogdomarcio.com.br/wp-content/uploads/2020/08/1529599829_57907b99d9.png"
+            src="https://www.extramercado.com.br/img/uploads/1/259/33272259.png"
             alt="Fanta Lata"
             class="w-28 h-28 object-cover flex-shrink-0 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
@@ -1771,45 +1800,203 @@
     </div>
     <!-- Fim do Menu -->
 
+    <!-- Modal de Personalização -->
+    <div
+      class="bg-black/60 w-full h-full fixed top-0 left-0 z-[100] items-center justify-center hidden backdrop-blur-sm transition-all duration-300 p-2 md:p-4"
+      id="customize-modal">
+      <div class="bg-white p-4 md:p-6 rounded-2xl w-full md:w-[500px] shadow-2xl transform transition-all duration-300 scale-95 opacity-0 max-h-[90vh] overflow-y-auto" id="customize-modal-content">
+
+        <!-- Header -->
+        <div class="flex items-center gap-3 border-b border-gray-100 pb-4 mb-4">
+          <img id="customize-img" src="" alt="" class="w-16 h-16 md:w-20 md:h-20 object-cover rounded-xl" />
+          <div class="flex-1">
+            <h2 class="font-bold text-lg md:text-xl text-gray-800" id="customize-name"></h2>
+            <p class="text-red-500 font-semibold" id="customize-base-price"></p>
+          </div>
+          <button id="close-customize-btn" class="w-9 h-9 rounded-full bg-gray-100 hover:bg-red-500 hover:text-white text-gray-500 transition-all duration-200 flex items-center justify-center">
+            <i class="fa-solid fa-xmark text-lg"></i>
+          </button>
+        </div>
+
+        <!-- Opções base (para Mini Xis) -->
+        <div id="base-options-container" class="hidden mb-4">
+          <h3 class="font-semibold text-gray-700 mb-2 text-sm">Escolha uma opção:</h3>
+          <div id="base-options" class="flex flex-col gap-2"></div>
+        </div>
+
+        <!-- Adicionais -->
+        <div id="extras-container" class="mb-4">
+          <h3 class="font-semibold text-gray-700 mb-2 text-sm" id="extras-title">Adicionais:</h3>
+          <div id="extras-list" class="flex flex-col gap-2 max-h-[40vh] overflow-y-auto pr-2"></div>
+        </div>
+
+        <!-- Total e botão -->
+        <div class="border-t border-gray-100 pt-4">
+          <div class="flex items-center justify-between mb-4">
+            <p class="text-gray-600">Total:</p>
+            <p class="font-bold text-2xl text-red-500" id="customize-total">R$ 0,00</p>
+          </div>
+          <button
+            id="confirm-add-btn"
+            class="w-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white py-3 rounded-xl font-bold text-lg transition-all duration-200 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-cart-plus"></i>
+            Adicionar ao carrinho
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Fim do Modal de Personalização -->
+
     <!-- Modal cart -->
     <div
-      class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+      class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden backdrop-blur-sm transition-all duration-300 p-2 md:p-4"
       id="cart-modal">
-      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
-        <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
-        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+      <div class="bg-white p-4 md:p-8 rounded-2xl w-full md:w-[900px] lg:w-[1000px] shadow-2xl transform transition-all duration-300 scale-95 opacity-0 max-h-[95vh] overflow-y-auto md:overflow-visible md:max-h-none" id="cart-modal-content">
 
-        <div>
-          <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
-          <p class="font-bold mt-4">Endereço de entrega:</p>
-          <input
-            type="text"
-            placeholder="Digite seu endereço completo..."
-            id="address"
-            class="w-full border-2 p-1 rounded my-1" />
-          <p class="text-red-500 hidden" id="address-warn">
-            Digite seu endereço completo!
-          </p>
-          <div class="flex items-center justify-between mt-5 w-full">
-            <button id="close-modal-btn">Fechar</button>
+        <!-- Header -->
+        <div class="flex items-center justify-between border-b border-gray-100 pb-3 md:pb-4 mb-4 md:mb-6">
+          <h2 class="font-bold text-xl md:text-2xl text-gray-800 flex items-center gap-2">
+            <i class="fa-solid fa-bag-shopping text-red-500"></i>
+            Meu Carrinho
+          </h2>
+          <button id="close-modal-btn" class="w-9 h-9 md:w-10 md:h-10 rounded-full bg-gray-100 hover:bg-red-500 hover:text-white text-gray-500 transition-all duration-200 flex items-center justify-center">
+            <i class="fa-solid fa-xmark text-lg"></i>
+          </button>
+        </div>
+
+        <!-- Layout em duas colunas no desktop -->
+        <div class="flex flex-col lg:flex-row gap-4 md:gap-6">
+
+          <!-- Coluna esquerda: Itens do carrinho -->
+          <div class="flex-1 lg:border-r lg:border-gray-100 lg:pr-6">
+            <h3 class="font-semibold text-gray-700 mb-3 flex items-center gap-2 text-sm md:text-base">
+              <i class="fa-solid fa-utensils text-red-500"></i>
+              Seus Pedidos
+            </h3>
+
+            <!-- Cart Items -->
+            <div id="cart-items" class="flex flex-col gap-2 md:gap-3"></div>
+
+            <!-- Empty cart message -->
+            <div id="empty-cart-msg" class="text-center py-6 md:py-12 text-gray-400">
+              <i class="fa-solid fa-cart-shopping text-4xl md:text-6xl mb-3 md:mb-4 block"></i>
+              <p class="text-base md:text-lg">Seu carrinho está vazio</p>
+              <p class="text-xs md:text-sm mt-1">Adicione itens do cardápio</p>
+            </div>
+
+            <!-- Total -->
+            <div class="flex items-center justify-between mt-3 md:mt-4 pt-3 md:pt-4 border-t border-gray-100">
+              <p class="text-gray-600 text-base md:text-lg">Total:</p>
+              <p class="font-bold text-xl md:text-2xl text-red-500"><span id="cart-total">R$ 0,00</span></p>
+            </div>
+          </div>
+
+          <!-- Coluna direita: Endereço e finalizar -->
+          <div class="lg:w-[380px]">
+            <h3 class="font-semibold text-gray-700 mb-3 flex items-center gap-2 text-sm md:text-base">
+              <i class="fa-solid fa-truck text-red-500"></i>
+              Entrega
+            </h3>
+
+            <div class="mb-3 md:mb-4">
+              <label class="font-medium text-gray-600 text-xs md:text-sm flex items-center gap-2 mb-2">
+              <i class="fa-solid fa-location-dot text-red-500"></i>
+              Endereço de entrega
+            </label>
+
+            <!-- CEP -->
+            <div class="flex gap-2 mb-2">
+              <input
+                type="text"
+                placeholder="CEP"
+                id="cep"
+                maxlength="9"
+                class="flex-1 md:w-32 md:flex-none border-2 border-gray-200 p-2 md:p-3 rounded-xl text-sm md:text-base focus:border-red-500 focus:outline-none transition-all duration-200" />
+              <button
+                type="button"
+                id="search-cep-btn"
+                class="bg-red-500 hover:bg-red-600 text-white px-3 md:px-4 rounded-xl transition-all duration-200 flex items-center gap-1 md:gap-2 text-sm md:text-base">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="hidden sm:inline">Buscar</span>
+              </button>
+              <span id="cep-loading" class="hidden items-center text-gray-400">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+              </span>
+            </div>
+
+            <!-- Rua -->
+            <input
+              type="text"
+              placeholder="Rua"
+              id="street"
+              readonly
+              class="w-full border-2 border-gray-200 p-2 md:p-3 rounded-xl bg-gray-50 mb-2 text-sm md:text-base" />
+
+            <!-- Número e Complemento -->
+            <div class="flex gap-2 mb-2">
+              <input
+                type="text"
+                placeholder="Nº"
+                id="number"
+                class="w-16 md:w-24 border-2 border-gray-200 p-2 md:p-3 rounded-xl text-sm md:text-base focus:border-red-500 focus:outline-none transition-all duration-200" />
+              <input
+                type="text"
+                placeholder="Complemento"
+                id="complement"
+                class="flex-1 min-w-0 border-2 border-gray-200 p-2 md:p-3 rounded-xl text-sm md:text-base focus:border-red-500 focus:outline-none transition-all duration-200" />
+            </div>
+
+            <!-- Bairro e Cidade -->
+            <div class="flex gap-2">
+              <input
+                type="text"
+                placeholder="Bairro"
+                id="neighborhood"
+                readonly
+                class="w-1/2 min-w-0 border-2 border-gray-200 p-2 md:p-3 rounded-xl bg-gray-50 text-sm md:text-base" />
+              <input
+                type="text"
+                placeholder="Cidade"
+                id="city"
+                readonly
+                class="w-1/2 min-w-0 border-2 border-gray-200 p-2 md:p-3 rounded-xl bg-gray-50 text-sm md:text-base" />
+            </div>
+
+            <!-- Campo oculto para endereço completo -->
+            <input type="hidden" id="address" />
+
+            <p class="text-red-500 text-xs md:text-sm mt-2 hidden" id="address-warn">
+              <i class="fa-solid fa-circle-exclamation"></i> Preencha o CEP e número!
+            </p>
+            <p class="text-red-500 text-xs md:text-sm mt-2 hidden" id="cep-error">
+              <i class="fa-solid fa-circle-exclamation"></i> CEP não encontrado!
+            </p>
+          </div>
+
             <button
               id="checkout-btn"
-              class="bg-green-500 text-white px-4 py-1 rounded">
-              Finalizar pedido
+              class="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-3 md:py-4 rounded-xl font-bold text-base md:text-lg transition-all duration-200 shadow-lg flex items-center justify-center gap-2 mt-3 md:mt-4">
+              <i class="fa-brands fa-whatsapp text-lg md:text-xl"></i>
+              Finalizar Pedido
             </button>
           </div>
+          <!-- Fim coluna direita -->
+
         </div>
+        <!-- Fim layout duas colunas -->
+
       </div>
     </div>
     <!-- Fim do modal cart -->
     <!-- Button cart footer -->
     <footer
-      class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+      class="w-full bg-gradient-to-r from-red-500 to-red-600 py-4 fixed bottom-0 z-40 flex items-center justify-center shadow-[0_-4px_20px_rgba(0,0,0,0.15)]">
       <button
-        class="flex items-center gap-2 text-white font-bold"
+        class="flex items-center gap-3 text-white font-bold text-lg transition-all duration-200 hover:scale-105 active:scale-95"
         id="cart-btn">
-        (<span id="cart-count">0</span>) Veja meu carrinho
-        <i class="fa fa-cart-plus text-lg text-white"></i>
+        <span class="bg-white text-red-500 w-7 h-7 rounded-full flex items-center justify-center font-bold text-sm" id="cart-count">0</span>
+        Veja meu carrinho
+        <i class="fa-solid fa-cart-shopping text-xl"></i>
       </button>
     </footer>
     <!-- Fim do button cart footer -->

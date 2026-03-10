@@ -1,9 +1,128 @@
 @import "tailwindcss";
 
+/* Esconder scrollbar nos filtros */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilo do botão de categoria ativo */
+.category-btn.active {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
 @theme {
   --font-sans: "Poppins", sans-serif;
 }
 
 body {
   background-color: #f6f7f8;
+}
+
+/* Custom scrollbar for cart */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* Cart modal animation */
+#cart-modal.show,
+#customize-modal.show {
+  display: flex !important;
+}
+
+#cart-modal.show #cart-modal-content,
+#customize-modal.show #customize-modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Add to cart button animation */
+.add-to-cart-btn {
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.add-to-cart-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart-btn:active {
+  transform: scale(0.95);
+}
+
+.add-to-cart-btn.added {
+  animation: pulse-success 0.4s ease;
+}
+
+@keyframes pulse-success {
+  0% { transform: scale(1); background-color: #111827; }
+  50% { transform: scale(1.2); background-color: #22c55e; }
+  100% { transform: scale(1); background-color: #111827; }
+}
+
+/* Cart item animation */
+.cart-item {
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Remove button in cart */
+.remove-from-cart-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .remove-from-cart-btn {
+    padding: 6px 16px;
+    border-radius: 8px;
+  }
+}
+
+.remove-from-cart-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+.remove-from-cart-btn:active {
+  transform: scale(0.95);
 }
