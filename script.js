@@ -625,23 +625,37 @@ if (isOpen) {
 }
 
 // Filtros de categorias
+const categoryFilters = document.getElementById("category-filters");
 const categoryButtons = document.querySelectorAll(".category-btn");
+
+function setActiveCategory(category) {
+  const activeButton = Array.from(categoryButtons).find(
+    (button) => button.getAttribute("data-category") === category,
+  );
+  const categoryChanged = activeButton && !activeButton.classList.contains("active");
+
+  categoryButtons.forEach((button) => {
+    button.classList.toggle(
+      "active",
+      button.getAttribute("data-category") === category,
+    );
+  });
+
+  if (categoryChanged) {
+    const scrollPosition =
+      activeButton.offsetLeft -
+      (categoryFilters.clientWidth - activeButton.offsetWidth) / 2;
+
+    categoryFilters.scrollTo({ left: scrollPosition, behavior: "smooth" });
+  }
+}
 
 categoryButtons.forEach((button) => {
   button.addEventListener("click", function () {
-    // Remover classe active de todos
-    categoryButtons.forEach((btn) => {
-      btn.classList.remove("active", "bg-red-500", "text-white");
-      btn.classList.add("bg-gray-100", "text-gray-700");
-    });
-
-    // Adicionar classe active ao clicado
-    this.classList.add("active");
-    this.classList.remove("bg-gray-100", "text-gray-700");
-
-    // Scroll suave até a seção
     const category = this.getAttribute("data-category");
     const section = document.getElementById(category);
+
+    setActiveCategory(category);
 
     if (section) {
       const headerOffset = 80;
@@ -671,15 +685,5 @@ window.addEventListener("scroll", function () {
     }
   });
 
-  // Atualizar botão ativo
-  categoryButtons.forEach((btn) => {
-    const category = btn.getAttribute("data-category");
-    if (category === currentSection) {
-      btn.classList.add("active");
-      btn.classList.remove("bg-gray-100", "text-gray-700");
-    } else {
-      btn.classList.remove("active");
-      btn.classList.add("bg-gray-100", "text-gray-700");
-    }
-  });
+  setActiveCategory(currentSection);
 });

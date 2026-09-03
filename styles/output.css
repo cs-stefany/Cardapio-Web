@@ -1152,7 +1152,7 @@
   display: none;
 }
 .category-btn.active {
-  background: linear-gradient(135deg, #ef4444, #dc2626);
+  background: #ef4444;
   color: white;
   box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
 }
