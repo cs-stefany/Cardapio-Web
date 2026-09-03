@@ -596,7 +596,7 @@ checkoutBtn.addEventListener("click", function () {
     `${cartItems}\nEndereço: ${addressInput.value}`,
   );
 
-  const phone = "53991085333";
+  const phone = "5553991085333";
 
   window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
 
