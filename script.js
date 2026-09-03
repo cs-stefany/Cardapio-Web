@@ -294,6 +294,58 @@ function formatName(name) {
   return name.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 }
 
+function formatCurrency(value) {
+  return value.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
+}
+
+function buildOrderMessage(items, address) {
+  const itemsText = items
+    .map((item) => {
+      const lines = [`*${item.quantity}x ${formatName(item.name)}*`];
+
+      if (item.baseOption) {
+        lines.push(`• Opção: ${item.baseOption}`);
+      }
+
+      if (item.extras && item.extras.length > 0) {
+        const extrasLabel = item.extras.length === 1 ? "Adicional" : "Adicionais";
+        const extrasNames = item.extras.map((extra) => extra.name).join(", ");
+        lines.push(`• ${extrasLabel}: ${extrasNames}`);
+      }
+
+      lines.push(`• Subtotal: ${formatCurrency(item.totalPrice * item.quantity)}`);
+      return lines.join("\n");
+    })
+    .join("\n\n");
+
+  const orderTotal = items.reduce(
+    (total, item) => total + item.totalPrice * item.quantity,
+    0,
+  );
+  const city = address.city.replace(" - ", "/");
+  const location = [address.neighborhood, city].filter(Boolean).join(" — ");
+  const complement = address.complement ? `, ${address.complement}` : "";
+  const addressLines = [
+    `${address.street}, ${address.number}${complement}`,
+    location,
+    address.cep ? `CEP: ${address.cep}` : "",
+  ].filter(Boolean);
+
+  return [
+    "🛒 *NOVO PEDIDO*",
+    "",
+    itemsText,
+    "",
+    `💰 *Total: ${formatCurrency(orderTotal)}*`,
+    "",
+    "📍 *ENDEREÇO DE ENTREGA*",
+    ...addressLines,
+  ].join("\n");
+}
+
 // função para adicionar no carrinho
 function addToCart(name, basePrice, imgSrc, extras = [], baseOption = null) {
   // Criar ID único baseado no produto + adicionais
@@ -576,25 +628,15 @@ checkoutBtn.addEventListener("click", function () {
   cepInput.classList.remove("border-red-500");
   numberInput.classList.remove("border-red-500");
 
-  //Enviar pedido para api do whatss
-  const cartItems = cart
-    .map((item) => {
-      let itemText = `${formatName(item.name)}`;
-      if (item.baseOption) {
-        itemText += ` (${item.baseOption})`;
-      }
-      if (item.extras && item.extras.length > 0) {
-        const extrasNames = item.extras.map(e => e.name).join(", ");
-        itemText += ` + ${extrasNames}`;
-      }
-      itemText += ` - Qtd: ${item.quantity} - R$ ${(item.totalPrice * item.quantity).toFixed(2)}`;
-      return itemText;
-    })
-    .join("\n");
-
-  const message = encodeURIComponent(
-    `${cartItems}\nEndereço: ${addressInput.value}`,
-  );
+  const orderMessage = buildOrderMessage(cart, {
+    street: streetInput.value,
+    number: numberInput.value,
+    complement: complementInput.value,
+    neighborhood: neighborhoodInput.value,
+    city: cityInput.value,
+    cep: cepInput.value,
+  });
+  const message = encodeURIComponent(orderMessage);
 
   const phone = "5553991085333";
 
